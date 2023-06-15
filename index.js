@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import connectToDatabase from "./config/database.js";
 import Products from "./models/products.js";
-
+const PORT=process.env.PORT || 3000
 const allproduct=Products.find({}).exec();
 const app = express();
 
@@ -25,7 +25,7 @@ app.get( "/" ,(req, res) => {
     // Set up routes here
     app.use("/api", product);
     // Start the server
-    app.listen(3000, () => {
+    app.listen(PORT, () => {
       console.log("Server is running on port 3000");
     });
   
