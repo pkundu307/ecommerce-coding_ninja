@@ -5,13 +5,14 @@
     "mongoose": "^7.3.0"
   },
   "name": "cnecommerce",
-  "version": "1.0.0",
-  "main": "app.js",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+    "scripts": {
+    "start":"node index.js",
+    "dev": "nodemon index.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "description": ""
